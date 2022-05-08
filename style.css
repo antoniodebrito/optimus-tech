@@ -1,0 +1,431 @@
+/* ===GERAL================================================= */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color:hsla(0, 59%, 35%);
+    --secondary-color: hsl(222, 14%, 27%);
+    --text-color: hsl(221, 13%, 46%);
+    --title-color: hsla(221, 43%, 11%);
+    --background: hsla(0, 60%, 35%, 0.05);
+    --background-2: hsla(0, 77%, 43%, 0.03);
+    --background-3: hsla(210, 24%, 98%, 1);
+    font-size: 62.5%;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+}
+
+
+.wrapper {
+    width: 128rem;
+    margin-inline: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.titulo-logo {
+    position: absolute;
+    text-indent: -3000px;
+}
+/* ===NAVIGATION============================================================ */
+
+#navigation {
+    width: 144rem;
+    height: 8rem;
+    margin-inline: auto;
+    padding: 1.8rem 8rem;
+}
+
+#navigation div {
+    height: 4.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#navigation .wrapper{
+    padding: .85rem;
+}
+
+#navigation .menu {
+    width: 36.2rem;
+    height: 3.2rem;
+    padding-block: .4rem ;
+    line-height: 2.4rem;
+
+     display: flex;
+     justify-content: space-between;
+}
+
+#navigation .buttons {
+    width: 20.7rem;
+    display: flex;
+    gap: 1.2rem;
+}
+
+#navigation .special-button {
+    background-color: var(--primary-color);
+    padding: 1rem 1.8rem;
+    border-radius: .8rem;
+    color: #fff;
+}
+
+
+/* ===HEADER======================================== */
+#header header {
+    height: 40.7rem;
+    padding: 9.6rem 0;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+#header header h3{
+    color: var(--primary-color);     
+    margin-bottom: 2.4rem;
+    font-weight: 600;
+}
+
+#header header h2 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    margin-bottom: 2.4rem;
+}
+
+
+#header header p {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 400;
+    color: var(--text-color);
+    width: 79.2rem;
+    height: 8.3rem;
+    padding-top: 1.2rem;
+}
+
+/* ===METRICAS=================================== */
+#metricas {
+    height: 28.8rem;
+}
+#metricas .stats{
+    display: flex;
+    justify-content: center;
+}
+
+#metricas .stat {
+    width: 28rem;
+}
+
+#metricas .stat h2 {
+    color: var(--primary-color);
+    font-size: 6rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+#metricas .stat h3 {
+    color: var(--title-color);
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: .8rem
+}
+
+#metricas .stat p {
+    color: var(--text-color);
+    line-height: 2.3rem;
+    font-weight: 400;
+}
+
+/* ===IMAGEM====================================== */
+#imagem {
+    height: 60.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagem .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagem header {
+    height: 13.8rem;
+    margin-bottom: 6.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#imagem .cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem ;
+}
+
+#imagem h3 {
+    background-color: var(--background);
+    color: var(--primary-color);
+    padding: .4rem 1.2rem;
+    width: 12.5rem;
+
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+    border-radius: 1.6rem;
+}
+
+#imagem span {
+    color: var(--title-color);
+    font-weight: 600;
+    font-size: 3.6rem;
+    letter-spacing: -.02rem;
+
+}
+
+#imagem p {
+    color: var(--text-color);
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 400;
+}
+
+#imagem .img img {
+    width: 121.6rem;
+    height: 40rem;
+    margin-bottom: 6.4rem;
+}
+
+
+
+/* ===VAGAS====================================== */
+#vagas {
+    margin-top: 6.4rem;
+    height: 93.2rem;
+}
+
+#vagas .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5.6rem;
+}
+
+#vagas .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#vagas .oportunidade {
+    height: 35.8rem;
+    width: 76.8rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+#vagas .oportunidade h3 {
+    color: var(--title-color);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    margin-bottom: 3.2rem;
+}
+
+#vagas .vaga {
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    height: 13.6rem;
+
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 28px;
+    gap: 2.4rem;
+}
+
+#vagas .vaga .titulo-vaga {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+#vagas .vaga .informacoes {
+    display: flex;
+    gap: 2.4rem;
+}
+
+/* ===DEPOIMENTOS========================================= */
+#depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8rem 9.6rem 8rem;
+}
+
+#depoimentos .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40.4rem;
+    padding: 6.4rem;
+    gap: 3.2rem;
+    position: static;
+    background-color: var(--background-2);
+    border-radius: 16px;
+}
+
+#depoimentos header {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+#depoimentos header h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+#depoimentos header p {
+    color: var(--title-color);
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 4.4rem;
+    letter-spacing: -.02rem;
+    text-align: center;
+    margin: 16px 0px;
+}
+
+#depoimentos .perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+#depoimentos .perfil h2 {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+#depoimentos .perfil span {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+/* ===RODAPÉ======================================================= */
+footer .wrapper{
+    width: 100%;
+    background-color: var(--background-3);
+    padding: 9.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+}
+
+footer .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    
+}
+
+footer .titulo-rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+footer .titulo-rodape h3 {
+    color: var(--title-color);
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 4.4rem;
+    letter-spacing: -.02rem;
+}
+
+footer .titulo-rodape p {
+    color: var(--text-color);
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+footer .form form input {
+    width: 36rem;
+    height: 4.8rem;
+    border: none;
+    box-shadow: -.25px -.25px 4px 2px gray;
+    border-radius: .8rem;
+    margin-right: 1.6rem;
+}
+
+footer .form form input::placeholder {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+footer .form form button {
+    width: 11.6rem;
+    height: 4.8rem;
+    border: none;
+    border-radius: .8rem;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+footer span {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
